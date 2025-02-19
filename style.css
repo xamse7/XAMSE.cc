@@ -4,6 +4,8 @@
 
         /* ======== General Styles ======== */
         body {
+    background-color: #1e1e2e; /* Dark Blue */
+                }
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
