@@ -8,7 +8,8 @@
             text-align: center;
             overflow-x: hidden;
         }
-    /* ======== Navigation Bar ======== */
+ 
+/* ======== Navigation Bar ======== */
         .navbar {
             position: fixed;
             top: 0;
@@ -20,6 +21,18 @@
             z-index: 1000;
         }
 
+        .navbar a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 0 20px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ff946a;
+        }
         /* ======== Animated Intro - Typing Effect ======== */
         .intro {
             position: fixed;
