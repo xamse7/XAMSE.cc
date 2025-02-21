@@ -8,6 +8,17 @@
             text-align: center;
             overflow-x: hidden;
         }
+    /* ======== Navigation Bar ======== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
 
         /* ======== Animated Intro - Typing Effect ======== */
         .intro {
