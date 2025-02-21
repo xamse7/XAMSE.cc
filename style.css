@@ -1,5 +1,4 @@
-       /* ======== General Styles ======== */
-        body {
+ body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
@@ -8,8 +7,8 @@
             text-align: center;
             overflow-x: hidden;
         }
- 
-/* ======== Navigation Bar ======== */
+
+        /* ======== Navigation Bar ======== */
         .navbar {
             position: fixed;
             top: 0;
@@ -33,7 +32,8 @@
         .navbar a:hover {
             color: #ff946a;
         }
-        /* ======== Animated Intro - Typing Effect ======== */
+
+        /* ======== Typing Effect ======== */
         .intro {
             position: fixed;
             width: 100%;
@@ -47,14 +47,7 @@
             font-weight: bold;
             font-family: 'Courier New', monospace;
             z-index: 10;
-            overflow: hidden;
-            animation: fadeOut 5s ease-in-out forwards;
-        }
-
-        @keyframes fadeOut {
-            0% { opacity: 1; }
-            80% { opacity: 1; }
-            100% { opacity: 0; visibility: hidden; }
+            animation: fadeOut 4s ease-in-out forwards;
         }
 
         .typing {
@@ -62,7 +55,7 @@
             white-space: nowrap;
             overflow: hidden;
             width: 0;
-            animation: typing 3s steps(15, end) forwards, blink 0.7s infinite;
+            animation: typing 3s steps(20, end) forwards, blink 0.7s infinite;
         }
 
         @keyframes typing {
@@ -74,10 +67,15 @@
             50% { border-color: transparent; }
         }
 
-        /* ======== Sections Design ======== */
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; }
+        }
+
         section {
             padding: 100px 20px;
-            margin-top: 50px;
+            margin-top: 60px;
         }
 
         .container {
@@ -100,15 +98,6 @@
             letter-spacing: 2px;
         }
 
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            font-weight: 300;
-            text-align: justify;
-            text-justify: inter-word;
-        }
-
-        /* ======== Certification & Skills ======== */
         .box {
             border: 2px solid #ffcc00;
             padding: 15px;
@@ -125,33 +114,13 @@
             transform: scale(1.05);
         }
 
-        /* ======== Contact Section ======== */
-        .contact a {
-            display: block;
-            color: #ffcc00;
-            text-decoration: none;
-            font-size: 1.3em;
-            font-weight: bold;
-            margin: 15px;
-            transition: 0.3s;
-        }
-
-        .contact a:hover {
-            color: #ff946a;
-            transform: scale(1.1);
-        }
-
-        /* ======== Footer ======== */
         footer {
             background: #111;
             color: white;
             padding: 20px;
             font-size: 1em;
-            position: relative;
-            bottom: 0;
             width: 100%;
-            margin-top: 50px;        
+            margin-top: 50px;
             text-transform: uppercase;
             letter-spacing: 1px;
-        }
-    </style>
+               }
